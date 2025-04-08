@@ -20,6 +20,8 @@ def make_report (file_names: list[str], report_name: str) -> None:
         print(f'Отчет с именем {e} не предусмотрен.\n')
 
 
+# Здесь добавляются отчеты.
+# Отчет должен содержать методы update и __str__
 reports: dict[str, Handlers]  = {
     'handlers': Handlers()
 }

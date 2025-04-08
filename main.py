@@ -22,7 +22,8 @@ def make_report (file_names: list[str], report_name: str) -> None:
 
 
 # Здесь добавляются отчеты.
-# Отчет должен содержать методы update и __str__
+# Отчет должен являться наследником класса Report
+# и реализовывать методы update и __str__
 reports: dict[str, Report]  = {
     'handlers': Handlers()
 }

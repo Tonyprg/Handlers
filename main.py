@@ -1,6 +1,7 @@
 import sys
 
-from report.handlers import Handlers
+from report import Report
+from report import Handlers
 
 def make_report (file_names: list[str], report_name: str) -> None:
     try:
@@ -22,7 +23,7 @@ def make_report (file_names: list[str], report_name: str) -> None:
 
 # Здесь добавляются отчеты.
 # Отчет должен содержать методы update и __str__
-reports: dict[str, Handlers]  = {
+reports: dict[str, Report]  = {
     'handlers': Handlers()
 }
 

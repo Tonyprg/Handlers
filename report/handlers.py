@@ -2,7 +2,7 @@ import re
 from functools import reduce
 from typing import Union, Tuple
 
-from .report import Report
+from report import Report
 
 class Handlers (Report):
 
